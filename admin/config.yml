@@ -1,1 +1,19 @@
+backend:
+  name: turbo-github
+  turbo_site_id: 4181d3b8-f5e3-4bd9-a238-e77bdfb3ecc2
+  branch: main
 
+media_folder: "uploads"
+public_folder: "/phanc.foundation/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/home.yml"
+        fields:
+          - { label: "Main Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
